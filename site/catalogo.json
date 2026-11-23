@@ -1,0 +1,142 @@
+{
+  "actualizado": "2026-11-23T12:00:00Z",
+  "tiendas": {
+    "parque": {
+      "nombre": "Mercado del Parque",
+      "disponible": true
+    },
+    "rio": {
+      "nombre": "Almacén del Río",
+      "disponible": true
+    },
+    "plaza": {
+      "nombre": "Mercado de la Plaza",
+      "disponible": true
+    }
+  },
+  "productos": [
+    {
+      "id": "yerba",
+      "nombre": "Yerba mate",
+      "ofertas": [
+        {
+          "tienda": "parque",
+          "nombre": "Yerba mate · 1 kg",
+          "precio": 5000,
+          "porUnidad": {
+            "unidad": "kg",
+            "precio": 5000.0
+          }
+        },
+        {
+          "tienda": "rio",
+          "nombre": "Yerba mate · 1 kg",
+          "precio": 5200,
+          "porUnidad": {
+            "unidad": "kg",
+            "precio": 5200.0
+          }
+        },
+        {
+          "tienda": "plaza",
+          "nombre": "Yerba mate · 1 kg",
+          "precio": 4800,
+          "porUnidad": {
+            "unidad": "kg",
+            "precio": 4800.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "huevos",
+      "nombre": "Huevos",
+      "ofertas": [
+        {
+          "tienda": "parque",
+          "nombre": "Huevos · 12 unidades",
+          "precio": 3600,
+          "porUnidad": {
+            "unidad": "u",
+            "precio": 300.0
+          }
+        },
+        {
+          "tienda": "rio",
+          "nombre": "Huevos · 12 unidades",
+          "precio": 3360,
+          "porUnidad": {
+            "unidad": "u",
+            "precio": 280.0
+          }
+        },
+        {
+          "tienda": "plaza",
+          "nombre": "Huevos · 12 unidades",
+          "precio": 3240,
+          "porUnidad": {
+            "unidad": "u",
+            "precio": 270.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "tomate",
+      "nombre": "Tomates",
+      "ofertas": [
+        {
+          "tienda": "parque",
+          "nombre": "Tomates · 1 kg",
+          "precio": 2400,
+          "porUnidad": {
+            "unidad": "kg",
+            "precio": 2400.0
+          }
+        },
+        {
+          "tienda": "rio",
+          "nombre": "Tomates · 1 kg",
+          "precio": 2600,
+          "porUnidad": {
+            "unidad": "kg",
+            "precio": 2600.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "limon",
+      "nombre": "Limón",
+      "ofertas": [
+        {
+          "tienda": "parque",
+          "nombre": "Limón · 1 kg",
+          "precio": 2400,
+          "porUnidad": {
+            "unidad": "kg",
+            "precio": 2400.0
+          }
+        },
+        {
+          "tienda": "rio",
+          "nombre": "Limón · 1 kg",
+          "precio": 1700,
+          "porUnidad": {
+            "unidad": "kg",
+            "precio": 1700.0
+          }
+        },
+        {
+          "tienda": "plaza",
+          "nombre": "Limón · 1 kg",
+          "precio": 1250,
+          "porUnidad": {
+            "unidad": "kg",
+            "precio": 1250.0
+          }
+        }
+      ]
+    }
+  ]
+}

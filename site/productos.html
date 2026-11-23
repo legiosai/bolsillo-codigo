@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7fc">
+  <title>Bolsillo · Productos</title>
+  <link rel="icon" href="recursos/bolsillo.png">
+  <link rel="stylesheet" href="bolsillo.css">
+  <link rel="stylesheet" href="estilos.css">
+  <script type="module" src="comparar.js"></script>
+</head>
+<body class="catalog-page">
+  <header class="mast"><div class="wrap mast-inner">
+    <a class="brand" href="./" aria-label="Bolsillo, inicio"><span class="wallet" aria-hidden="true"></span>bolsillo<span class="brand-dot">.</span></a>
+    <nav class="top-nav" aria-label="Principal"><a href="./">Mi compra</a><a href="productos.html" aria-current="page">Productos</a></nav>
+    <span class="ciudad"><i aria-hidden="true"></i>Rosario</span>
+  </div></header>
+  <main class="wrap">
+    <p class="demo-aviso"><b>Catálogo de demostración.</b> Los comercios y los precios de este ejemplo son ficticios. <a href="https://legiosai.github.io/bolsillo/">Ver los precios de Rosario</a>.</p>
+    <header class="intro"><div><h1>Comparar productos</h1><p>Compará marcas, presentaciones y precios en Rosario.</p></div><p id="fecha" class="date" aria-live="polite"></p></header>
+    <div class="layout">
+      <section class="catalog card" aria-labelledby="productos"><h2 id="productos">Productos</h2>
+        <label for="busqueda">Buscar en el catálogo</label>
+        <input type="search" id="busqueda" placeholder="Ej. yerba, atún, huevos" autocomplete="off">
+        <div class="tabs" aria-label="Mostrar productos"><button id="todos" type="button" aria-pressed="true">Todos</button><button id="favoritos" type="button" aria-pressed="false">Mis favoritos</button></div>
+        <div id="catalog-list"></div>
+      </section>
+      <section id="comparacion" class="comparison card" aria-labelledby="seleccion"><p role="status">Cargando los precios…</p></section>
+    </div>
+    <footer><span>Bolsillo · Rosario, Argentina</span><a href="https://github.com/legiosai/bolsillo-codigo">Código abierto · MIT</a></footer>
+  </main>
+<p id="estado" class="sr-only" role="status"></p>
+</body></html>

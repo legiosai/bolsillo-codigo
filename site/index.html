@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7fc">
+  <meta name="description" content="Armá tu lista y compará cuánto cuesta comprarla en los supermercados de Rosario.">
+  <title>Bolsillo · Mi compra</title>
+  <link rel="icon" href="recursos/bolsillo.png">
+  <link rel="stylesheet" href="bolsillo.css">
+  <script type="module" src="bolsillo.js"></script>
+</head>
+<body>
+  <header class="mast"><div class="wrap mast-inner">
+    <a class="brand" href="./" aria-label="Bolsillo, inicio"><span class="wallet" aria-hidden="true"></span>bolsillo<span class="brand-dot">.</span></a>
+    <nav class="top-nav" aria-label="Principal"><a href="./" aria-current="page">Mi compra</a><a href="productos.html">Productos</a></nav>
+    <span class="ciudad"><i aria-hidden="true"></i>Rosario</span>
+  </div></header>
+  <main class="wrap">
+    <p class="demo-aviso"><b>Catálogo de demostración.</b> Los comercios y los precios de este ejemplo son ficticios. <a href="https://legiosai.github.io/bolsillo/">Ver los precios de Rosario</a>.</p>
+    <section class="hero" aria-labelledby="titulo">
+      <div class="hero-text">
+        <p class="fecha" id="fecha">Precios de Rosario</p>
+        <h1 id="titulo">Tu mejor total</h1>
+        <div id="resumen" aria-live="polite"></div>
+        <div class="hero-actions"><a class="solid-light" href="#totales">Ver supermercados</a><a class="ghost-light" href="#lista">Mi lista</a></div>
+      </div>
+      <div class="ticket-scene"><div id="ticket"></div></div>
+    </section>
+    <div class="workspace">
+      <section class="card basket" id="lista" aria-labelledby="titulo-lista">
+        <header class="card-head"><div><div class="kicker" id="tipo-lista">Mi compra</div><h2 id="titulo-lista">Lista de compras</h2></div><span class="count" id="cantidad"></span></header>
+        <div id="items"></div>
+        <button id="agregar" class="primary" type="button">＋ Agregar productos</button>
+        <div class="list-tools"><button id="copiar" class="text-button" type="button">Copiar lista</button><div id="ejemplo"></div></div>
+      </section>
+      <section class="card ranking" id="totales" aria-labelledby="titulo-ranking">
+        <header class="card-head"><div><div class="kicker" id="cobertura">Precios por cadena</div><h2 id="titulo-ranking">Dónde conviene</h2></div><button id="comparar-dos" class="secondary" type="button" hidden>Comparar dos</button></header>
+        <div id="resultados"><p role="status">Cargando precios…</p></div>
+      </section>
+    </div>
+    <footer><span>Bolsillo · Rosario, Argentina</span><span>Precios en pesos argentinos</span><a href="https://github.com/legiosai/bolsillo-codigo">Código abierto · MIT</a></footer>
+  </main>
+  <dialog id="catalogo" aria-labelledby="titulo-dialogo">
+    <header class="dialog-head"><h2 id="titulo-dialogo">Buscar productos</h2><button id="cerrar" type="button" aria-label="Cerrar">×</button></header>
+    <div id="contenido-dialogo"></div>
+    <p id="aviso" class="sr-only" role="status"></p>
+  </dialog>
+  <p id="estado" class="sr-only" role="status"></p>
+  <div id="feedback" role="status" hidden></div>
+</body>
+</html>
